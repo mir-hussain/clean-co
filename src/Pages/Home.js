@@ -47,7 +47,7 @@ const Home = () => {
             <option disabled selected>
               Type of cleaning
             </option>
-            <option>Stander cleaning</option>
+            <option>Standard cleaning</option>
             <option>Deep cleaning</option>
             <option>Move in/Move out cleaning</option>
           </select>

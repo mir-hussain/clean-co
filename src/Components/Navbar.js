@@ -25,15 +25,12 @@ const Navbar = ({ children }) => {
             </label>
           </div>
           <div className='flex-none hidden lg:block'>
-            <ul className='menu menu-horizontal p-0'>
+            <ul className='menu menu-horizontal p-0 gap-2'>
               <li>
                 <a>Home</a>
               </li>
               <li>
                 <a>About</a>
-              </li>
-              <li>
-                <a>Service</a>
               </li>
               <li>
                 <a>Pages</a>
@@ -44,6 +41,37 @@ const Navbar = ({ children }) => {
               <li>
                 <a>Contact</a>
               </li>
+              <div className='dropdown dropdown-hover'>
+                <label
+                  tabindex='0'
+                  className='btn btn-primary normal-case text-base'
+                >
+                  Services
+                  <svg
+                    className='fill-current'
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='20'
+                    height='20'
+                    viewBox='0 0 24 24'
+                  >
+                    <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' />
+                  </svg>
+                </label>
+                <ul
+                  tabindex='0'
+                  className='dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52'
+                >
+                  <li>
+                    <a className='w-full'>Standard Cleaning</a>
+                  </li>
+                  <li>
+                    <a className='w-full'>Deep Cleaning</a>
+                  </li>
+                  <li>
+                    <a className='w-full'>Move in/Move out Cleaning</a>
+                  </li>
+                </ul>
+              </div>
             </ul>
           </div>
         </div>
@@ -54,11 +82,41 @@ const Navbar = ({ children }) => {
         <label for='my-drawer-3' className='drawer-overlay'></label>
         <ul className='menu p-4 overflow-y-auto w-80 bg-base-100'>
           <li>
-            <a>Sidebar Item 1</a>
+            <a>Home</a>
           </li>
           <li>
-            <a>Sidebar Item 2</a>
+            <a>About</a>
           </li>
+          <li>
+            <a>Pages</a>
+          </li>
+          <li>
+            <a>Blog</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
+          <div
+            tabindex='0'
+            class='collapse collapse-arrow border border-emerald-500 bg-base-100 rounded-box'
+          >
+            <div class='collapse-title text-xl text-emerald-500 font-medium'>
+              Services
+            </div>
+            <div class='collapse-content'>
+              <ul tabindex='0' className='dropdown-content menu p-2  w-full'>
+                <li>
+                  <a className='w-full'>Standard Cleaning</a>
+                </li>
+                <li>
+                  <a className='w-full'>Deep Cleaning</a>
+                </li>
+                <li>
+                  <a className='w-full'>Move in/Move out Cleaning</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </ul>
       </div>
     </div>
