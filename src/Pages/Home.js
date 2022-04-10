@@ -3,27 +3,25 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div>
-        <div className='h-screen lg:h-[60vh] bg-orange-100 hero px-12'>
-          <div className='hero-content p-0 flex-col lg:flex-row'>
-            <div className=' mt-16 lg:mt-0'>
-              <p className='ml-1 text-xl'>Best Quality</p>
-              <h1 className='text-5xl font-bold'>
-                Professional Cleaning Service
-              </h1>
-              <p className='py-6 max-w-xl'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has
-              </p>
-              <button className='btn btn-primary'>Get Started</button>
-            </div>
-            <div className='h-[60vh] shrink-0'>
-              <img
-                src='https://thekingworld.com/cleanhub/wp-content/uploads/2022/02/hero-image.png'
-                className='h-full'
-                alt=''
-              />
-            </div>
+      <div className='h-screen lg:h-[60vh] bg-orange-100 hero px-12 '>
+        <div className='hero-content p-0 flex-col justify-between lg:flex-row'>
+          <div className=' mt-16 lg:mt-0'>
+            <p className='ml-1 text-xl'>Best Quality</p>
+            <h1 className='text-3xl md:text-5xl font-bold'>
+              Professional Cleaning Service
+            </h1>
+            <p className='py-6 max-w-xl'>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has
+            </p>
+            <button className='btn btn-primary'>Get Started</button>
+          </div>
+          <div className='lg:h-[60vh] shrink-0 justify-self-end '>
+            <img
+              src='https://thekingworld.com/cleanhub/wp-content/uploads/2022/02/hero-image.png'
+              className='h-full'
+              alt=''
+            />
           </div>
         </div>
       </div>
@@ -46,7 +44,7 @@ const Home = () => {
             placeholder='Email'
             className='input input-bordered w-full'
           ></input>
-          <select class='select select-bordered w-full max-w-xs'>
+          <select class='select select-bordered w-full '>
             <option disabled selected>
               Type of cleaning
             </option>
@@ -69,7 +67,7 @@ const Home = () => {
             placeholder='Square Foot'
             className='input input-bordered w-full'
           ></input>
-          <select class='select select-bordered w-full max-w-xs'>
+          <select class='select select-bordered w-full'>
             <option disabled selected>
               Frequency of cleaning
             </option>
